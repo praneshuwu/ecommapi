@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "cd ecommfrontend && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,5 @@
   "engines": {
     "node": "12.14.0",
     "npm": "8.1.0"
-  },
-  "heroku-postbuild": "cd ecommfrontend && npm install && npm run build"
-
+  }
 }
