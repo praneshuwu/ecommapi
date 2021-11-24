@@ -32,10 +32,10 @@ app.use('/api/cart', cartRoute);
 app.use('/api/orders', orderRoute);
 app.use('/api/checkout', stripeRoute);
 
-app.use(express.static(path.join(__dirname, "/<front end app folder name>/build")));
+app.use(express.static(path.join(__dirname, "/ecommfrontend/build")));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/<front end app folder name>/build', 'index.html'));
+  res.sendFile(path.join(__dirname, '/ecommfrontend/build', 'index.html'));
 });
 
 app.listen(5000, () => {
