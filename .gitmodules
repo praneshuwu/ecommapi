@@ -1,0 +1,3 @@
+[submodule "ecommfrontend"]
+	path = ecommfrontend
+	url = https://github.com/praneshuwu/ecommfrontend
